@@ -12,13 +12,13 @@ beforeAll(async () => { browser = await setup(); });
 
 test.only('sample', async () => {
 	const page = await browser.newPage();
-	
-	await page.goto('http://localhost:3001', { waitUntil: 'networkidle0' });
+
+	await page.goto('http://localhost:3000', { waitUntil: 'networkidle0' });
 
 	//await page.waitFor(20000);
 	const source = await page.$('#drag-source-yo1');
 	const target = await page.$('#drop-target');
-	
+
 	await source.hover();
 	await page.mouse.down();
 

@@ -20,6 +20,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      window.addEventListener('mousedown', () => console.log('mousedown'));
+      window.addEventListener('mouseup', () => console.log('mouseup'));
+      window.addEventListener('dragstart', () => console.log('dragstart'));
+      window.addEventListener('dragend', () => console.log('dragend'));
+      window.addEventListener('mousemove', () => console.log('mousemove'));
+      window.addEventListener('drop', () => console.log('drop'));
+    </script>
   </head>
   <body>
     <noscript>
